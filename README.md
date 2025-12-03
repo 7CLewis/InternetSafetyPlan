@@ -1,7 +1,9 @@
 # Internet Safety Plan
 An all-in-one, parent-focused platform for managing a healthy and safe internet environment at home.
 
-[NOTE: This project was originally planned to be an app, but I since pivoted and created the [Internet Safety Plan website](https://internetsafetyplan.com). The purpose of this project is now just to highlight my development capabilities]. 
+[NOTE: This project was originally planned to be an app, but I since pivoted and created the [Internet Safety Plan website](https://internetsafetyplan.com). The purpose of this project is now just to highlight my development capabilities.]
+
+[NOTE 2: This repo was copied from repos in my Azure DevOps project (that unfortunately cannot be made public), hence the simplistic commit history. If you are an employer and would like to see the full commit history in AzDo, please reach out to me and I'll happily give you access to the project]. 
 
 ---
 
