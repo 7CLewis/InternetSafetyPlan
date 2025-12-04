@@ -52,9 +52,10 @@ TODO: Note good coding practice stuff I did like DDD, onion architecture, etc.
 ## Prerequisites
 - .NET 8 SDK  
 - Visual Studio 2022 or later
-- SSMS 18 or later
+- SSMS v18 or later
 - SQL Server Express
-- Node.js + npm  (TODO: Add versions)
+- Node.js v20 or later
+- npm v9 or later
 - WSL2 with newest versions of `buildah` & `podman` installed (`sudo apt install podman buildah -y` should do it for Ubuntu-based Linux)
 
 ## Backend Setup
@@ -76,21 +77,23 @@ TODO: Note good coding practice stuff I did like DDD, onion architecture, etc.
 - Run the command `./local-containers.sh`. This will build the Keycloak image based on the Dockerfile, create a pod, and run a container.
 - In a browser, navigate to http://localhost:8080/ (may take a few minutes to start running)
 - Log in with the credentials found in `src/auth/Keycloak/.env`.
+- Navigate to the internet-safety Realm
 - Create a User, and set a password for them in the Credentials tab.
 
 Success! You now have a user you can use to log into the app once the frontend is running. 
 - Note that Keycloak is a full Identity and Access Management platform. You can set up SSO with Microsoft, Google, etc. if you want, instead of having local, Keycloak-only users.
 
 ## Frontend Setup
-
+- In a terminal with node and npm installed, navigate to `src/frontend`
+- Run `npm i`
+- Run `npm run dev`
 
 # Usage
 Once the backend, frontend, and Keycloak are running:
-- Navigate to the frontend in your browser by going to [TODO: Add URL]
+- Navigate to the frontend in your browser by going to http://localhost:5173/
 - Log in using your Keycloak account.
 - Set up your family.
-- Add devices, set goals, and start receiving check-ins.
-- Explore the knowledge base and app/device guides.
+- Add devices, set goals and action items, and get internet-safe!
 
 # Contributing
 Contributions are welcome!
