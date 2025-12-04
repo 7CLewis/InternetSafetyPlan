@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetSafetyPlan.Domain", "src\backend\Domain\InternetSafetyPlan.Domain.csproj", "{D671503C-5757-4E16-ABB8-7353B26F1E38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{0481AF04-ED27-4674-BDF3-BBF59BC8A89A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F56F13C5-B8E6-4C94-BD6F-23543CF579DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7C9FC4D5-7F06-4201-8F91-51AE30FB88DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetSafetyPlan.Domain.Test", "test\backend\Domain\InternetSafetyPlan.Domain.Test.csproj", "{B500E2AA-EB3E-4DF5-9606-69733A842CDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetSafetyPlan.Shared", "src\backend\Shared\InternetSafetyPlan.Shared.csproj", "{F409342F-70C5-4697-9F19-7F190B8F9C96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetSafetyPlan.Infrastructure", "src\backend\Infrastructure\InternetSafetyPlan.Infrastructure.csproj", "{20F5BF3B-C8C3-4D1F-A0FC-8135477BC0EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetSafetyPlan.Api", "src\backend\Api\InternetSafetyPlan.Api.csproj", "{E50791F9-1576-46DA-8613-F70612662BB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetSafetyPlan.Application", "src\backend\Application\InternetSafetyPlan.Application.csproj", "{C806BE7A-2540-410E-9C16-47FC9D5A5785}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetSafetyPlan.Application.Test", "test\backend\Application\InternetSafetyPlan.Application.Test\InternetSafetyPlan.Application.Test.csproj", "{484F2EC8-ED36-43E8-AB2F-217AE489F296}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetSafetyPlan.Test.Shared", "test\backend\Shared\InternetSafetyPlan.Test.Shared\InternetSafetyPlan.Test.Shared.csproj", "{54E19A5F-DB1B-4023-9595-ED7510F0A281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D671503C-5757-4E16-ABB8-7353B26F1E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D671503C-5757-4E16-ABB8-7353B26F1E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D671503C-5757-4E16-ABB8-7353B26F1E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D671503C-5757-4E16-ABB8-7353B26F1E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B500E2AA-EB3E-4DF5-9606-69733A842CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B500E2AA-EB3E-4DF5-9606-69733A842CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B500E2AA-EB3E-4DF5-9606-69733A842CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B500E2AA-EB3E-4DF5-9606-69733A842CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F409342F-70C5-4697-9F19-7F190B8F9C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F409342F-70C5-4697-9F19-7F190B8F9C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F409342F-70C5-4697-9F19-7F190B8F9C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F409342F-70C5-4697-9F19-7F190B8F9C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F5BF3B-C8C3-4D1F-A0FC-8135477BC0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F5BF3B-C8C3-4D1F-A0FC-8135477BC0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F5BF3B-C8C3-4D1F-A0FC-8135477BC0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F5BF3B-C8C3-4D1F-A0FC-8135477BC0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50791F9-1576-46DA-8613-F70612662BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50791F9-1576-46DA-8613-F70612662BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50791F9-1576-46DA-8613-F70612662BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50791F9-1576-46DA-8613-F70612662BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C806BE7A-2540-410E-9C16-47FC9D5A5785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C806BE7A-2540-410E-9C16-47FC9D5A5785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C806BE7A-2540-410E-9C16-47FC9D5A5785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C806BE7A-2540-410E-9C16-47FC9D5A5785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484F2EC8-ED36-43E8-AB2F-217AE489F296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484F2EC8-ED36-43E8-AB2F-217AE489F296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484F2EC8-ED36-43E8-AB2F-217AE489F296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484F2EC8-ED36-43E8-AB2F-217AE489F296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E19A5F-DB1B-4023-9595-ED7510F0A281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E19A5F-DB1B-4023-9595-ED7510F0A281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E19A5F-DB1B-4023-9595-ED7510F0A281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E19A5F-DB1B-4023-9595-ED7510F0A281}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D671503C-5757-4E16-ABB8-7353B26F1E38} = {F56F13C5-B8E6-4C94-BD6F-23543CF579DA}
+		{B500E2AA-EB3E-4DF5-9606-69733A842CDD} = {7C9FC4D5-7F06-4201-8F91-51AE30FB88DB}
+		{F409342F-70C5-4697-9F19-7F190B8F9C96} = {F56F13C5-B8E6-4C94-BD6F-23543CF579DA}
+		{20F5BF3B-C8C3-4D1F-A0FC-8135477BC0EA} = {F56F13C5-B8E6-4C94-BD6F-23543CF579DA}
+		{E50791F9-1576-46DA-8613-F70612662BB1} = {F56F13C5-B8E6-4C94-BD6F-23543CF579DA}
+		{C806BE7A-2540-410E-9C16-47FC9D5A5785} = {F56F13C5-B8E6-4C94-BD6F-23543CF579DA}
+		{484F2EC8-ED36-43E8-AB2F-217AE489F296} = {7C9FC4D5-7F06-4201-8F91-51AE30FB88DB}
+		{54E19A5F-DB1B-4023-9595-ED7510F0A281} = {7C9FC4D5-7F06-4201-8F91-51AE30FB88DB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4BD8595-94B5-40F7-8905-E6E0B7F0C396}
+	EndGlobalSection
+EndGlobal

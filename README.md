@@ -1,7 +1,9 @@
 # Internet Safety Plan
 An all-in-one, parent-focused platform for managing a healthy and safe internet environment at home.
 
-[NOTE: This project was originally planned to be an app, but I since pivoted and created the [Internet Safety Plan website](https://internetsafetyplan.com). The purpose of this project is now just to highlight my development capabilities]. 
+[NOTE: This project was originally planned to be an app, but I since pivoted and created the [Internet Safety Plan website](https://internetsafetyplan.com). The purpose of this project is now just to highlight my development capabilities.]
+
+[NOTE 2: This repo was copied from repos in my Azure DevOps project (that unfortunately cannot be made public), hence the simplistic commit history. If you are an employer and would like to see the full commit history in AzDo, please reach out to me and I'll happily give you access to the project]. 
 
 ---
 
@@ -49,11 +51,25 @@ TODO: Note good coding practice stuff I did like DDD, onion architecture, etc.
 # Build and Run
 ## Prerequisites
 - .NET 8 SDK  
+- Visual Studio 2022 or later
+- SSMS 18 or later
+- SQL Server Express
 - Node.js + npm  (TODO: Add versions)
 - Docker or buildah + podman (TODO: Add versions; for running Keycloak locally)  
 
 ## Backend Setup
-
+- Set up a new SQL Server DB locally named `InternetSafetyPlanDev`. 
+- Copy the connection string information into the `InternetSafetyPlan` connection string in the Infrastructure project's `appsettings.Development.json`.
+  - Account used for connection string needs `db_datareader` and `db_datawriter` permissions on the DB.
+- Open the `InternetSafetyPlan.Backend` Solution in Visual Studio
+- Set `InternetSafetyPlan.Infrastructure` as the Startup Project.
+- Open the Package Manager Console, and set the Infrastructure project as the default.
+- Run the command `Script-Migration -From 0 -To Initial -Output "migrations\Initial.sql"`
+  - Can leave off the `Output` arg if you don't want to save it (or change the directory you output to)
+- Copy-paste the outputted SQL into your `InternetSafetyPlanDev` DB. This'll initialize the DB Schema with all tables, indices, and table relationships.
+- Back in VS, set `InternetSafetyPlan.Api` as the Startup project, and run it (may need to accept SSL certs on first run)
+- In a browser, navigate to https://localhost:7070/swagger/index.html
+- Try out some of the endpoints with Swagger.
 
 ## Frontend Setup
 
