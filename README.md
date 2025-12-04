@@ -55,7 +55,7 @@ TODO: Note good coding practice stuff I did like DDD, onion architecture, etc.
 - SSMS 18 or later
 - SQL Server Express
 - Node.js + npm  (TODO: Add versions)
-- Docker or buildah + podman (TODO: Add versions; for running Keycloak locally)  
+- WSL2 with newest versions of `buildah` & `podman` installed (`sudo apt install podman buildah -y` should do it for Ubuntu-based Linux)
 
 ## Backend Setup
 - Set up a new SQL Server DB locally named `InternetSafetyPlanDev`. 
@@ -71,10 +71,17 @@ TODO: Note good coding practice stuff I did like DDD, onion architecture, etc.
 - In a browser, navigate to https://localhost:7070/swagger/index.html
 - Try out some of the endpoints with Swagger.
 
+## IAM Setup
+- Open WSL2 and navigate to the `src/auth/Keycloak` directory
+- Run the command `./local-containers.sh`. This will build the Keycloak image based on the Dockerfile, create a pod, and run a container.
+- In a browser, navigate to http://localhost:8080/ (may take a few minutes to start running)
+- Log in with the credentials found in `src/auth/Keycloak/.env`.
+- Create a User, and set a password for them in the Credentials tab.
+
+Success! You now have a user you can use to log into the app once the frontend is running. 
+- Note that Keycloak is a full Identity and Access Management platform. You can set up SSO with Microsoft, Google, etc. if you want, instead of having local, Keycloak-only users.
+
 ## Frontend Setup
-
-
-## Keycloak Setup
 
 
 # Usage
