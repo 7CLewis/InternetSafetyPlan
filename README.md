@@ -21,12 +21,15 @@ An all-in-one, parent-focused platform for managing a healthy and safe internet 
 ---
 
 # Introduction
-The **Internet Safety Plan** is an all-in-one action plan for parents to track and manage the internet-safe environment they are establishing with their families. It features everything parents need to maintain their course and achieve their internet safety goals, including:
+The **Internet Safety Plan** is an all-in-one action plan for parents to track and manage the internet-safe environment they are establishing with their families. It will feature everything parents need to maintain their course and achieve their internet safety goals, including:
 
 - Device-management lists and charts  
 - Periodic check-ins on goals  
 - Regular updates on new software, apps, and trends  
-- Communication tips for raising kids to think critically and make wise online decisions  
+- Communication tips for raising kids to think critically and make wise online decisions
+
+Currently, it only features goal and device tracking. Here's a quick demo:
+https://github.com/user-attachments/assets/acffa1bf-1100-437d-8268-2c70855bd47f
 
 # Tech Stack
 
