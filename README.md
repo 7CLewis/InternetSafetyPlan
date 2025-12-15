@@ -28,7 +28,8 @@ The **Internet Safety Plan** is an all-in-one action plan for parents to track a
 - Regular updates on new software, apps, and trends  
 - Communication tips for raising kids to think critically and make wise online decisions
 
-Currently, it only features goal and device tracking. Here's a quick demo:
+Currently, it only features goal and device tracking. Here's a quick demo of the frontend:
+
 https://github.com/user-attachments/assets/acffa1bf-1100-437d-8268-2c70855bd47f
 
 # Tech Stack
